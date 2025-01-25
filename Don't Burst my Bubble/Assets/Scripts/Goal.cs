@@ -21,7 +21,6 @@ public class Goal : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name + " collided with " + gameObject.name);
         if (collision.gameObject.name == "Player")
         {
             gameManager.LoadNextScene();
