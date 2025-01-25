@@ -5,24 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class EnemyColision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    public AudioSource manager;
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
         {
-            Destroy(collision.gameObject);
-            SceneManager.LoadScene("Game Over");
+            manager.Play();
+            Debug.Log(manager.isPlaying);
+            StartCoroutine(waiting());
         }
+    }
+    private IEnumerator waiting()
+    {
+        yield return new WaitForSeconds(0.1f);
+        SceneManager.LoadScene("Game Over");
     }
 }

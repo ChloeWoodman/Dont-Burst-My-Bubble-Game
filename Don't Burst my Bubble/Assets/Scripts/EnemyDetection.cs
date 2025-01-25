@@ -12,6 +12,8 @@ public class EnemyDetection : MonoBehaviour
     private int index = 1;
     Transform[] points;
 
+    public AudioSource manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,8 +48,17 @@ public class EnemyDetection : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            manager.Play();
+        }
+    }
+
     void OnTriggerStay2D(Collider2D collision)
     {
+       
         if (collision.gameObject.name == "Player")
         {
             movePos = collision.transform.position;
