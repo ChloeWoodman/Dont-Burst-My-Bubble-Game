@@ -11,7 +11,7 @@ public class EnemyDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SPEED = 0.03f;
+        SPEED = 0.045f;
         rb = GetComponent<Rigidbody2D>();
         movePos = rb.position;
     }
