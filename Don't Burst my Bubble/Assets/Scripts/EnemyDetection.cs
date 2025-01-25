@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyDetection : MonoBehaviour
 {
-    public float SPEED;
+    public float SPEED = 0.045f;
     public GameObject Path;
     private Vector3 movePos;
     private Rigidbody2D rb;
@@ -15,7 +15,6 @@ public class EnemyDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SPEED = 0.045f;
         rb = GetComponent<Rigidbody2D>();
         if (Path != null)
         {

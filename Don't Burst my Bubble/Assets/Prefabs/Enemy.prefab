@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1971542438062149159}
   - component: {fileID: 3444282302017662119}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2026440047017686911}
   - component: {fileID: 5415114942734718723}
   - component: {fileID: 7695119040748465812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 3027706608048345484}
   - component: {fileID: 4056287423392918708}
   - component: {fileID: 3218604298224401638}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Triangle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
