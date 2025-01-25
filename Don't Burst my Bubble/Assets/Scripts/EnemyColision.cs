@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyColision : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class EnemyColision : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             Destroy(collision.gameObject);
+            SceneManager.LoadScene("Game Over");
         }
     }
 }
