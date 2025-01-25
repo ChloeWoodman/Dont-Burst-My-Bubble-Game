@@ -19,7 +19,6 @@ public class EnemyColision : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name + " collided with " + gameObject.name);
         if (collision.gameObject.name == "Player")
         {
             Destroy(collision.gameObject);
