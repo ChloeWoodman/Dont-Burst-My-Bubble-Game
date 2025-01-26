@@ -855,8 +855,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Don't Burst my Bubble
-  metroPackageVersion: 
+  metroPackageName: DontBurstmyBubble
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -864,7 +864,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Don't Burst my Bubble
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Don't Burst my Bubble
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
